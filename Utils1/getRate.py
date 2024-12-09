@@ -14,4 +14,4 @@ def numberconvert(rate):
         'Zero': 0
     }
 
-    return int(number[rate])
+    return number[rate]

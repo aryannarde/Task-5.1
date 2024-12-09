@@ -8,7 +8,7 @@ def extractBook(book):
         'alt': img.attrs['alt']
     }
     price = extractPrice(book)
-    rating = book.find('p', attrs={'class': 'star-rating'}).attrs['class'][1]
+    rating = numberconvert(book.find('p', attrs={'class': 'star-rating'}).attrs['class'][1])
 
     title = book.find('h3').a.attrs['title']
     bookData = {
